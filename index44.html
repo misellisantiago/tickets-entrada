@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flujo de Validación</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #005f73;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    button {
+      background-color: #0a9396;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #007f83;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #9b2226;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Flujo de Validación</h1>
+    <p>
+      Esta página demuestra un flujo básico: el usuario hace clic en el botón 
+      <strong>Validar</strong> y se ejecuta una acción de prueba que muestra un mensaje.
+    </p>
+    <button onclick="validar()">Validar</button>
+    <div id="resultado"></div>
+  </div>
+
+  <script>
+    function validar() {
+      // Aquí puedes añadir la lógica real de validación
+      document.getElementById("resultado").textContent = "Validación ejecutada correctamente.";
+    }
+  </script>
+</body>
+</html>
